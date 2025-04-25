@@ -1,13 +1,58 @@
-# React + Vite
+# 🪙 Crypto Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive web application to track cryptocurrency performance with real-time dynamic charts and detailed stats. Built using React, Redux, and Tailwind CSS.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- Live-like crypto table UI
+- Dynamic 7-day mini price charts
+- Beautifully styled with Tailwind CSS
+- Redux state management
+- Optimized build with Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-"# crypto-tracker" 
+---
+
+## 🛠 Tech Stack
+
+### Frontend:
+- **React** – Component-based UI
+- **Vite** – Fast build tool and dev server
+- **Redux** – Global state management
+- **Tailwind CSS** – Utility-first styling
+
+### Architecture:
+- `src/component` – Core UI components (`CryptoTable`, `MiniChart`)
+- `src/assets` – Static assets (logos)
+- `src/data` – Crypto sample data (mocked for frontend, `sampleData`)
+- `src/redux` – Redux store configuration(`cryptoSlice`, `store`)
+- `src/utils` - Random coin fluctuation(`helpers`)
+
+> Data flow: `sampleData.tsx` → Redux Store → `CryptoTable.jsx` → individual coin rows with chart rendered from `MiniChart.jsx`
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone the repository
+
+```bash
+git clone [https://github.com/AbhinavAjGaur/crypto-tracker.git]
+cd crypto-tracker
+
+```
+### 2. Install dependencies
+
+```bash
+
+npm install
+
+```
+### 3.  Start development server
+
+```bash
+
+npm run dev
+
+```
